@@ -9,9 +9,26 @@ import SwiftUI
 
 @main
 struct PaceApp: App {
+    
+    @Environment(\.scenePhase) var scenePhase
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabNavigationView()
+        }.onChange(of: scenePhase) { newScenePhase in
+            switch scenePhase {
+            case .active:
+                /// application became active
+                break
+            case .background:
+                /// application went to background
+                break
+            case .inactive:
+                /// application became inactive
+                break
+            default:
+                break
+            }
         }
     }
 }

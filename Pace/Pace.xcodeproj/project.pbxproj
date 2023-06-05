@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		AF7804E02A2E691E00910495 /* PaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7804DF2A2E691E00910495 /* PaceApp.swift */; };
-		AF7804E22A2E691E00910495 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7804E12A2E691E00910495 /* ContentView.swift */; };
 		AF7804E42A2E691F00910495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7804E32A2E691F00910495 /* Assets.xcassets */; };
 		AF7804E72A2E691F00910495 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7804E62A2E691F00910495 /* Preview Assets.xcassets */; };
+		AF7804EE2A2E6A7700910495 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7804ED2A2E6A7700910495 /* TabView.swift */; };
+		AF7804F72A2E725300910495 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7804F52A2E725300910495 /* SettingsView.swift */; };
+		AF7804F82A2E725300910495 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7804F62A2E725300910495 /* SettingsViewModel.swift */; };
+		AF7804FA2A2E726000910495 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7804F92A2E726000910495 /* ThemeManager.swift */; };
+		AF7804FE2A2E767F00910495 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7804FD2A2E767F00910495 /* FoundationExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF7804DC2A2E691E00910495 /* Pace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7804DF2A2E691E00910495 /* PaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaceApp.swift; sourceTree = "<group>"; };
-		AF7804E12A2E691E00910495 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF7804E32A2E691F00910495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF7804E62A2E691F00910495 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF7804ED2A2E6A7700910495 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		AF7804F52A2E725300910495 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AF7804F62A2E725300910495 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		AF7804F92A2E726000910495 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		AF7804FD2A2E767F00910495 /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				AF7804DF2A2E691E00910495 /* PaceApp.swift */,
-				AF7804E12A2E691E00910495 /* ContentView.swift */,
-				AF7804E32A2E691F00910495 /* Assets.xcassets */,
+				AF7804EF2A2E6A7B00910495 /* Views */,
+				AF7804F32A2E6BED00910495 /* Models */,
+				AF7804F22A2E6BDA00910495 /* Services */,
+				AF7804FB2A2E756900910495 /* Utilities */,
+				AF7804F12A2E6B9100910495 /* Resources */,
 				AF7804E52A2E691F00910495 /* Preview Content */,
 			);
 			path = Pace;
@@ -65,6 +76,71 @@
 				AF7804E62A2E691F00910495 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF7804EF2A2E6A7B00910495 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF7804ED2A2E6A7700910495 /* TabView.swift */,
+				AF7804F02A2E6A8700910495 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF7804F02A2E6A8700910495 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AF7804F42A2E722D00910495 /* Settings */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AF7804F12A2E6B9100910495 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF7804E32A2E691F00910495 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF7804F22A2E6BDA00910495 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AF7804F92A2E726000910495 /* ThemeManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AF7804F32A2E6BED00910495 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AF7804F42A2E722D00910495 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AF7804F52A2E725300910495 /* SettingsView.swift */,
+				AF7804F62A2E725300910495 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		AF7804FB2A2E756900910495 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AF7804FC2A2E757500910495 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AF7804FC2A2E757500910495 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF7804FD2A2E767F00910495 /* FoundationExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +213,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF7804E22A2E691E00910495 /* ContentView.swift in Sources */,
+				AF7804F72A2E725300910495 /* SettingsView.swift in Sources */,
+				AF7804EE2A2E6A7700910495 /* TabView.swift in Sources */,
+				AF7804FE2A2E767F00910495 /* FoundationExtensions.swift in Sources */,
+				AF7804FA2A2E726000910495 /* ThemeManager.swift in Sources */,
 				AF7804E02A2E691E00910495 /* PaceApp.swift in Sources */,
+				AF7804F82A2E725300910495 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
