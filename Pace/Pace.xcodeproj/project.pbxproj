@@ -15,6 +15,7 @@
 		AF7804F82A2E725300910495 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7804F62A2E725300910495 /* SettingsViewModel.swift */; };
 		AF7804FA2A2E726000910495 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7804F92A2E726000910495 /* ThemeManager.swift */; };
 		AF7804FE2A2E767F00910495 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7804FD2A2E767F00910495 /* FoundationExtensions.swift */; };
+		AF7805002A2E8B6D00910495 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7804FF2A2E8B6D00910495 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		AF7804F62A2E725300910495 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		AF7804F92A2E726000910495 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		AF7804FD2A2E767F00910495 /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
+		AF7804FF2A2E8B6D00910495 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		AF7804FB2A2E756900910495 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				AF7804FF2A2E8B6D00910495 /* Logger.swift */,
 				AF7804FC2A2E757500910495 /* Extensions */,
 			);
 			path = Utilities;
@@ -215,6 +218,7 @@
 			files = (
 				AF7804F72A2E725300910495 /* SettingsView.swift in Sources */,
 				AF7804EE2A2E6A7700910495 /* TabView.swift in Sources */,
+				AF7805002A2E8B6D00910495 /* Logger.swift in Sources */,
 				AF7804FE2A2E767F00910495 /* FoundationExtensions.swift in Sources */,
 				AF7804FA2A2E726000910495 /* ThemeManager.swift in Sources */,
 				AF7804E02A2E691E00910495 /* PaceApp.swift in Sources */,
