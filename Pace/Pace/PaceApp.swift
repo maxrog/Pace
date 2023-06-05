@@ -5,6 +5,16 @@
 //  Created by Max Rogers on 6/5/23.
 //
 
+/*
+ Things TODO
+ New Maps SwiftUI stuff
+ Swift Charts Framework
+ Swift Data - Core Data Alternative
+ 
+ Widget - Weekly Mileage Recap?
+ Watch Integration
+ */
+
 import SwiftUI
 
 @main

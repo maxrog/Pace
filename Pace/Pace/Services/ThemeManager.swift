@@ -14,6 +14,7 @@ import SwiftUI
  Can just have a color palette below these settings to change the main accent color
  
 TODO test system preference + changing back and forth
+ // TODO should / can this use AppStorage?
  */
 
 
