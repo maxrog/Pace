@@ -13,6 +13,8 @@
  
  Widget - Weekly Mileage Recap?
  Watch Integration
+ 
+ SF Symbol Animation
  */
 
 import SwiftUI
